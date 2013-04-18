@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512E106F171FAD880085F7CD /* UIApplication+Malt.m in Sources */ = {isa = PBXBuildFile; fileRef = 512E106E171FAD880085F7CD /* UIApplication+Malt.m */; };
 		51DBC91F16F9116300D4DB0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DBC91E16F9116300D4DB0D /* UIKit.framework */; };
 		51DBC92116F9116300D4DB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DBC92016F9116300D4DB0D /* Foundation.framework */; };
 		51DBC92316F9116300D4DB0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DBC92216F9116300D4DB0D /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		512E106D171FAD880085F7CD /* UIApplication+Malt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Malt.h"; sourceTree = "<group>"; };
+		512E106E171FAD880085F7CD /* UIApplication+Malt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Malt.m"; sourceTree = "<group>"; };
 		51DBC91B16F9116300D4DB0D /* MaltDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaltDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DBC91E16F9116300D4DB0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51DBC92016F9116300D4DB0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,9 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512E106C171FAD880085F7CD /* Malt */ = {
+			isa = PBXGroup;
+			children = (
+				512E106D171FAD880085F7CD /* UIApplication+Malt.h */,
+				512E106E171FAD880085F7CD /* UIApplication+Malt.m */,
+			);
+			path = Malt;
+			sourceTree = "<group>";
+		};
 		51DBC91216F9116300D4DB0D = {
 			isa = PBXGroup;
 			children = (
+				512E106C171FAD880085F7CD /* Malt */,
 				51DBC92416F9116300D4DB0D /* MaltDemo */,
 				51DBC94816F9116300D4DB0D /* MaltDemoTests */,
 				51DBC91D16F9116300D4DB0D /* Frameworks */,
@@ -274,6 +287,7 @@
 				51DBC92B16F9116300D4DB0D /* main.m in Sources */,
 				51DBC92F16F9116300D4DB0D /* ACAppDelegate.m in Sources */,
 				51DBC93816F9116300D4DB0D /* ACViewController.m in Sources */,
+				512E106F171FAD880085F7CD /* UIApplication+Malt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MaltDemo/MaltDemo-Prefix.pch";
 				INFOPLIST_FILE = "MaltDemo/MaltDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MaltDemo/MaltDemo-Prefix.pch";
 				INFOPLIST_FILE = "MaltDemo/MaltDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +470,7 @@
 				51DBC95516F9116400D4DB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51DBC95616F9116400D4DB0D /* Build configuration list for PBXNativeTarget "MaltDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +479,7 @@
 				51DBC95816F9116400D4DB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ACViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UILabel *label;
+@property (nonatomic, weak) IBOutlet UITextView *textView;
 @end
