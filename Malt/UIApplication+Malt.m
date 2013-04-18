@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 acoomans. All rights reserved.
 //
 
+// implemented following http://stackoverflow.com/questions/3426467/how-to-determine-at-run-time-if-app-is-for-development-app-store-or-ad-hoc-dist
+
 #import "UIApplication+Malt.h"
 
 @implementation UIApplication (Malt)
